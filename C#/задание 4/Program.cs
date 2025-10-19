@@ -20,7 +20,7 @@ else
     ComplitedTaks++;
 }
 
-//Проверка на наличие цифр. А вдруг пользователь введет пароль, состоящий из одних только цифр?
+//Проверка на наличие цифр.
 char[] FindNums = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 bool IsNums = UserPassword.Any(с => FindNums.Contains(с));
 if (IsNums)
@@ -74,4 +74,5 @@ if (ComplitedTaks == 4)
 else
 {
     Console.WriteLine("\n\n\nПеречитайте условия для создания пароля и попробуйте ещё раз!");
+
 }
